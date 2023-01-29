@@ -1,0 +1,91 @@
+{% load static %}
+{% include "components/header.html" %}
+
+<section style="background-color: rgb(255, 255, 255);">
+
+</section>
+
+<section class = "about_us" id = "about_us">
+  <div class = "container">
+    <div class="row">
+
+        <div class="col-md-12 col-sm-12  col-lg-12 col-xl-12">
+        <div class= " p-3 mb-3 text-center">
+           <h1> Introduction</h1>
+           <p>Supervised by the Ministry of Youth Affairs, the National Youth Service (NYS) is a national programme that promotes youth participation in governance. It is meant to provide newly qualified graduates with opportunities to obtain practical job experience in the public and private sectors of the economy. It directly addresses the problem of social exclusion, which is discussed in detail below.</p>
+        </div>
+      </div>
+  
+      <div class=" col-md-12 col-sm-12  col-lg-3 col-xl-3">
+        <div class=" p-3 mb-3 text-center about_us_items">
+            <div class="about_us_logo">
+                <img src="{% static "images/nys-logo-.png" %}" class="mx-auto d-block mb-4"  alt="nys logo">
+            </div>
+            <h3> <a href="{% url "background" %}" style="text-decoration:none;">Background</a></h3>
+            <p>In Sierra Leone, the Government’s 
+                response to this call to address social 
+                exclusion engendered a debate at governmental 
+                and civil society levels that led to the idea of a 
+                national service for youth in Sierra Leone.</p>
+                <ul>
+                    <a href="{% url "background" %}" style="text-decoration:none;">Read More..</a>
+                </ul>
+        </div>
+      </div>
+   
+      <div class=" col-md-12 col-sm-12  col-lg-3 col-xl-3">
+        <div class=" p-3 mb-3 text-center about_us_items">
+            <div class="about_us_logo">
+                <img src="{% static "images/nys-logo-.png" %}" class="mx-auto d-block mb-4"  alt="nys logo">
+            </div>
+            <h3> <a href="{% url "mission_vision" %}" style="text-decoration:none;">Mission & Vision</a></h3>
+            <p>The Parliament of Sierra Leone enacted the NYS Act and 
+                gazette as Vol. CXLV11. No. 17 dated 12 March 2016. 
+                Sierra Leone’s NYS, which was launched in December 2016, 
+                is a national programme that promotes youth participation in governance.</p>
+                <ul>
+                    <a href="{% url "mission_vision" %}" style="text-decoration:none;">Read More..</a>
+                </ul>
+        </div>
+      </div>
+   
+ 
+      <div class=" col-md-12 col-sm-12  col-lg-3 col-xl-3">
+        <div class="p-3 mb-3 text-center about_us_items">
+            <div class="about_us_logo">
+                <img src="{% static "images/nys-logo-.png" %}" class="mx-auto d-block mb-4"  alt="nys logo">
+            </div>
+            <h3> <a href="{% url "implementation" %}" style="text-decoration:none;">Implementation</a></h3>
+            <p>Dr. Mohamed Juldeh Jalloh on Thursday 20th 
+                September, 2018 inaugurated the first batch of 200 National 
+                Youth graduate corps at the Peace Keeping Military 
+                Center at Robgangba, Hastings in the eastend of Freetown.</p>
+                <ul>
+                    <a href=" {% url "implementation" %}" style="text-decoration:none;">Read More..</a>
+                </ul>
+        </div>
+      </div>
+   
+      <div class=" col-md-12 col-sm-12  col-lg-3 col-xl-3">
+        <div class=" p-3 mb-3 text-center about_us_items">
+            <div class="about_us_logo">
+                <img src="{% static "images/nys-logo-.png" %}" class="mx-auto d-block mb-4"  alt="nys logo">
+            </div>
+            <h3> <a href="{% url "objectives" %}" style="text-decoration:none;">Objectives</a></h3>
+            <p>The objectives of the NYS scheme as stipulated in the 
+                2016 National Youth Service Act are as follows:</p>
+                <ul>
+                    <a href="{% url "objectives" %}" style="text-decoration:none;">Read More..</a>
+                </ul>
+        
+        </div>
+      </div>
+    </div>
+    </div>
+
+   
+</section>
+
+
+
+{% include "components/footer.html" %}

@@ -1,0 +1,93 @@
+
+{% load static %}
+ {% include "components/header.html" %}
+
+
+
+
+ <section class="mission_vision" id="mission_vision">
+<div class="container-fluid">
+  <h1 class="text-center">Mission & Vision Statement</h1>
+  <div class="row">
+          <div class="col-md-12 col-sm-12  col-lg-8 col-xl-8">
+            <div class= " p-3 mb-3 p-3 mb-3 border-left"  style="line-height: 2;">
+              <div>
+                <p>
+                The Parliament of Sierra Leone enacted the NYS Act and gazette as 
+                Vol. CXLV11. No. 17 dated 12 March 2016. Sierra Leone’s NYS, which was launched in December 
+                2016, is a national programme that promotes youth participation in governance.
+                    <br><br>
+                          The 2016 NYS Act aims to create work opportunities and sustainable
+                          livelihoods for young persons; instill in participants a sense of responsibility 
+                          and of service to the country; gain a sense of self-respect and respect for authority; 
+                          understand the values of discipline, democracy, citizenship and cooperation;
+                           and foster social cohesion.
+                     <br><br>
+                          The National Youth Service (NYS) Framework, the study that led to the development of 
+                          NYS Act of 2016, recognizes the role of the NYS in the social 
+                          mobilization and capacity-building of the youth.
+                    <br><br>
+                     <b>The NYS Framework states that youth service initiatives should broadly encompass the following:</b>
+                    <br>
+                      <li>Develop skills, knowledge and the ability to make a better transition into adulthood;</li>
+                      <li>Provide a vehicle for national development in different areas of deployment;</li>
+                      <li>Introduce capacity-building programmes for leadership;</li>
+                      <li>Facilitate youth-driven poverty alleviation programmes;</li>
+                      <li>Make community service an integral part of tertiary education and the school curriculum and expand it to reach community service needs;</li>
+                      <li>Create a spirit of nationalism and patriotism among the youth population, thereby helping to eliminate prejudices about fellow citizens of Sierra Leone.</li>
+
+                </p>
+            </div>  
+        
+            </div>
+        
+
+          <div class="background_btn" style="margin-top:10px">
+            <button class="btn btn-primary" type = "button" >
+              <a href="{% url "background_info" %}" style="color: rgb(251, 249, 249); text-decoration:none;" > << Back </a>
+          </button> 
+        </div>
+          </div>
+          
+      
+      
+          <div class=" col-md-12 col-sm-12  col-lg-4 col-xl-4 " >
+            <div class=" p-3 mb-3 ">Quick Links</div>
+            <div style="border: 1px solid rgb(216, 210, 210); text-decoration:none;">
+              <a href="{% url 'donations' %}">Make a donations</a><hr>
+              <a href="{% url "background" %}">Background</a><hr>
+              <a href="{% url "implementation" %}">Implementation </a><hr>
+              <a href="{% url "objectives" %}">Objectives</a><hr>
+              <a href="{% url "application" %}">Admission</a><hr>
+              <a href="#">Minister of Youth and foreign affairs</a><hr>
+              <a href="#">Minister of Youth and foreign affairs</a>
+          </div>
+          </div>
+
+  </div>
+</div>
+
+ </section>
+
+{% include "components/footer.html" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+{% load static %}
+ {% include "components/header.html" %}
+
+
+ <section class="background_info" id="background_info">
+<div class="container-fluid">
+  <h1 class="text-center">Background</h1>
+  <div class="row">
+
+          <div class="col-md-12 col-sm-12  col-lg-8 col-xl-8">
+            <div class= " p-3 mb-3 p-3 mb-3"  style="line-height: 2;">
+              <div>
+                <p>
+                    Social exclusion is a multi-dimensional phenomenon that has gained 
+                    worldwide attention in the policy world. Policies addressing exclusion 
+                    have been effective in addressing problems arising from the lack of 
+                    employment, poor skills, low income, high crime environments, poor 
+                    housing and poor health among youth. In addition, the concept of social 
+                    exclusion is antithetical to the wider concepts of citizenship, human and 
+                    social capital, and democracy.
+                    <br><br>
+
+                    Social capital, for instance, has become an increasingly useful tool to
+                    understand the role of people’s networks and relations in both their 
+                    social and economic development. According to the World Bank, 
+                    social capital comprises of norms that shape institutions and provide 
+                    a quality relationship in a society’s social interactions.
+                    <br><br>
+                    This is echoed by Civic Practices Network, which adds that social 
+                    capital consists of stocks of social trust, norms and networks that 
+                    people use to solve common problems. Responding to the precarious 
+                    situation of young people worldwide, the United Nations General Assembly, i
+                    n its fifty-second session in 1997, called on all Member States to implement 
+                    the World Programme of Action for Youth for 2000 and beyond.
+                    <br><br>
+                    Each Member State was encouraged to formulate national youth policies and 
+                    programmes using both a development and a rights approach.
+                    <br><br>
+                    In Sierra Leone, the Government’s response to this call engendered a debate at 
+                    governmental and civil society levels that led to the idea of a national service for 
+                    youth in Sierra Leone.
+                    <br><br>
+                    The connection between national service and the responsibilities that come 
+                    with citizenship has since become a priority for public policy. The benefits of 
+                    national service – and the NYS – accrue not only to individuals, who develop 
+                    robust relationships among each other, but also to societal institutions. 
+                    Therefore, community members must be willing and eager to invest in 
+                    one another. Doing so will build social capital, and strengthen community 
+                    ownership in the development process, and mutual trust.
+                </p>
+            </div>  
+        
+            </div>
+        
+
+          <div class="background_btn" style="margin-top:10px">
+            <button class="btn btn-primary" type = "button" >
+              <a href="{% url "background_info" %}" style="color: rgb(251, 249, 249); text-decoration:none;" > << Back </a>
+          </button> 
+        </div>
+          </div>
+          
+      
+      
+          <div class=" col-md-12 col-sm-12  col-lg-4 col-xl-4" >
+            <div class=" p-3 mb-3 ">Quick Links</div>
+            <div style="border: 1px solid rgb(216, 210, 210); text-decoration:none;">
+              <a href="{% url 'donations' %}">Make a donations</a><hr>
+              <a href="{% url "mission_vision" %}">Mission & Vision</a><hr>
+              <a href="{% url "implementation" %}">Implementation </a><hr>
+              <a href="{% url "objectives" %}">Objectives</a><hr>
+              <a href="{% url "application" %}">Admission</a><hr>
+              <a href="#">Minister of Youth and foreign affairs</a><hr>
+              <a href="#">Minister of Youth and foreign affairs</a>
+          </div>
+          </div>
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+ </section>
+
+{% include "components/footer.html" %}

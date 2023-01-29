@@ -1,0 +1,100 @@
+{% include "components/header.html"%}
+
+
+<section style="background-color: rgb(255, 255, 255);">
+
+</section>
+  
+
+<section>
+<div class="container-fluid">
+    <div class="row">
+          <div class="col-md-12 col-sm-12  col-lg-12 col-xl-12">
+            <h1 class="text-center">Get In Touch</h1>
+            <h5 class="text-center">HEADQUARTER</h5>
+        
+      <div class= " text-white p-3 mb-3 contact_us_border">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1973.12861332623!2d-13.185005768210626!3d8.474349844993958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf04c31821e0cf6b%3A0xbfa291626d01d788!2sLocust%20step!5e0!3m2!1sen!2ssl!4v1672321904377!5m2!1sen!2ssl" 
+      width="100%" height="450" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      </div>
+    </div>
+
+
+
+<div class="text-center"><h1>Contact Us Below</h1></div>
+    
+    <div class=" col-md-12 col-sm-12  col-lg-6 col-xl-5">
+      <div class= "text-white p-3 mb-3 contact_us_border">
+        <!-- <h3>Contact Info</h3> -->
+        <p style="font-size: 18px; color:black;">Do well to contact us via our numerous point of contact 
+          channels or you can send us a message from this dialog box 
+          and we would attend to all your concerns.</p>
+       <div style="font-size:20px">
+              <h5><i class="fa fa-home"></i> <span>6 College Road Leicester</span></h5>
+              <h5><i class="fa fa-phone"></i> Phone: <span>+23276606545</span></h5>
+              <h5><i class="fa fa-envelope"></i> Email: <span>youthservices@nys.gov.sl</span></h5>
+              <h5><i class="fas fa-globe"></i> Web Address: <span>www.nys.gov.sl</span></h5>
+        </div>
+
+        <div class="col-12 other_location">
+          <button class="btn btn-primary" type="submit"><a href="{% url 'other_location' %}" style="color:#fff;"> Other Locations </a></button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class=" col-md-12 col-sm-12  col-lg-6 col-xl-7">
+      <div class="  p-3 mb-3 contact_us_border">
+
+<form action="#" class="row g-3 " >
+   <div class="col-md-6">
+    <div class="form-floating">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+    <label for="name" class="form-label">Name*</label>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-floating">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required> 
+    <label for="email" class="form-label">Email*</label>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="form-floating">
+    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required> 
+    <label for="subject" class="form-label">Subject*</label>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="form-floating">
+   <textarea class="form-control" name="textarea" id="textarea" placeholder="Subject" required></textarea> 
+    <label for="subject" class="form-label">Message*</label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+
+</form>
+
+
+
+    </div>
+  </div>
+    </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+{% include "components/footer.html"%}

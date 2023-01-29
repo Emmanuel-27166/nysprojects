@@ -1,0 +1,294 @@
+/* GALLERY PAGE SECTION BEGINS */
+body{
+	margin:0;
+	padding:0;
+}
+/* .container{
+	width:90%
+	margin:10px auto;
+} */
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+/* .portfolio-item{
+	/*width:100%;*
+} */
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+/* GALLERY PAGE SECTION ENDS */
+
+/* CONTACT US sECTION BEGINS */
+.other_location  a{
+    text-decoration: none;
+    
+}
+/* CONTACT US sECTION ENDS */
+
+
+/* ALUMNI SECTIOn BEGINS*/
+/* General Style */
+.common {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.common::before,
+.common::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  -moz-transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pic-caption {
+  position: absolute;
+  text-align: center;
+  background: rgb(16, 16, 0);
+  z-index: 999;
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  top: 50%;
+  -webkit-transform: translate3d(-100%, -50%, 0);
+  transform: translate3d(-100%, -50%, 0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.pic-caption a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* Slideup Caption */
+
+.slideup img {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.slideup .pic-caption {
+  top: 100%;
+  opacity: 1;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slideup:hover img {
+  -moz-transform: translate3d(0, -20px, 0);
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+}
+
+.slideup:hover .pic-caption {
+  -moz-transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* Slidedown Caption */
+
+.slidedown:hover::before {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slidedown:hover .pic-caption {
+  opacity: 1;
+  -moz-transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+/* Horizontal Split Caption */
+
+.split-horiz::after {
+  -moz-transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.split-horiz:hover::before {
+  -moz-transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+
+.split-horiz:hover::after {
+  -moz-transform: translate3d(0, 50%, 0);
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
+}
+
+.split-horiz:hover .pic-caption {
+  opacity: 1;
+  -moz-transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+/* Vertical Split Caption */
+
+.split-vert::before {
+  -moz-transform: translate3d(-100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.split-vert::after {
+  -moz-transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.split-vert:hover::before {
+  -moz-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+
+.split-vert:hover::after {
+  -moz-transform: translate3d(50%, 0, 0);
+  -webkit-transform: translate3d(50%, 0, 0);
+  transform: translate3d(50%, 0, 0);
+}
+
+.split-vert:hover .pic-caption {
+  opacity: 1;
+  -moz-transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+}
+/* ALUMNI SECTION ENDS*/
+
+/* ADMISSI ON SECTION BEGINS*/
+
+/* ADMISSI ON SECTION ENDS*/
+
+/* ABOUT US SECTION BEGINS */
+/* 1 background_info */
+.about_us_logo img{
+  width: 100px;
+  display: block;
+ 
+}
+.about_us_items{
+  margin-top: 24px;
+}
+.about_us_items:hover{
+  background: rgb(229, 224, 224);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+}
+
+
+
+
+
+/* 2 ===staff==== */
+#executive_dir{
+  height: 100%;
+  width: 100%;
+  background: #d8d5da;  /* fallback for old browsers */
+/*  background: -webkit-linear-gradient(to right, #b4abb5, #7F00FF);   Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #2c2b2c, #7F00FF);  */
+
+}
+
+/* sponsors- */
+.sponsors-social-icons i{
+  display: inline-block;
+  margin-right: 10px;
+  color: black;
+  font-size: 24px;
+}
+/* in kin sponsors */
+.nys_sponsors{
+  height: 100%;
+  width: 100%;
+  background: #d8d5da;  /* fallback for old browsers */
+}
+/* recent sponsors  */
+.nys_sponsors-recent{
+  height: 100%;
+  width: 100%;
+  background: #efebf2;  /* fallback for old browsers */
+}
+
+/* about impact */
+.about-impact{
+  background-color: aquamarine;
+}
+/* ABOUT US SECTION ENDS */
+
+
+/* NEWS SECTION */
+.news-items:hover{
+  background: rgb(229, 224, 224);
+  border-radius: 10px;
+  
+}

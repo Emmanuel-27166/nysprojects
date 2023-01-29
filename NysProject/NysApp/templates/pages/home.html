@@ -1,0 +1,562 @@
+{%load static%}
+{% include "components/header.html"%}
+    
+<!-- sLIDER SECTION BEGINS -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  
+    </div>
+  
+    <div class="carousel-inner home-Descr-slider">
+      <div class="carousel-item active item">
+        <img src="{% static "/images/about1.jpg" %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption ">
+          <h1 class="display-2">First slide label</h1>
+          <p>Some representative placeholder content for the first slide.</p>
+          <a href="" class="btn btn-half mt-3 btn-outline-light btn-md">Get Started</a>
+          <a href="{% url "application" %}" class="btn btn-full mt-3 btn-primary btn-md" >Apply Now</a>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <img src="{% static "/images/about2.jpg" %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption ">
+          <h1 class="display-2">Second slide label</h1>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item item">
+        <img src="{% static "/images/about3.jpg" %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h1 class="display-2">Third slide label</h1>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <img src="{% static "/images/about4.jpg" %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h1 class="display-2">Fourth slide label</h1>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <img src="{% static "/images/about5.png" %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption md sm xl">
+          <h1 class="display-2">Fifth slide label</h1>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- SLIDER SECTION ENDS -->
+
+<!--  About  SECTION BEGINS -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="row text-center">
+    <h1 class="text-center display-3 fw-bold">About </h1>
+    <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto" style="width: 50px; height:3px;">
+
+  </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Minima ducimus beatae quas non quod earum alias magnam 
+      excepturi vitae similique. Praesentium velit voluptatem 
+      iste commodi, consequatur fugit ullam maxime suscipit!</p>
+      <div class="row">
+        <div class= " text-black mt-5"><h2>Ongoing Services</h2> </div>
+      <!-- </div> -->
+
+      <!-- rigth aside -->
+        <div class="col-md-12 col-sm-12  col-lg-6 col-xl-9">
+        <div class= " text-black p-3 mb-3 ">
+          <div class="mt-5">
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+           minus tempora, nobis rerum ea at labore molestias
+           doloribus consequuntur quae ratione quasi est, 
+           non perferendis vel impedit minima officiis consequatur.</p>
+          </div>
+      
+        </div>
+      </div>
+  <!-- left aside img -->
+      <div class=" col-md-12 col-sm-12  col-lg-3 col-xl-3">
+        <div class=" text-black p-3 mb-3">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static "/images/about1.jpg" %}" class="d-block w-100 img-slid-ongoing" alt="...">
+                <caption><p style="font-size: 13px;">MoYA and UNDP Discuss Employment Opportunities with Youth 
+                  Leaders and Key Stakeholders</p></caption>
+                  <h6 style="font-size: 10px;">3 January,2023</h6>
+                <a href="#">Read More..</a>
+              </div>
+              <div class="carousel-item">
+                <img src="{% static "/images/about2.jpg" %}" class="d-block w-100 img-slid-ongoing" alt="...">
+                <caption><p style="font-size: 13px;">National Youth Service (NYS) Embarks On Follow-up 
+                  And Monitoring Exercise Of Batch Three Corps Members</p></caption>
+                  <h6 style="font-size: 10px;">1 January,2023</h6>
+                <a href="#">Read More..</a>
+              </div>
+              <div class="carousel-item">
+                <img src="{% static "/images/about1.jpg" %}" class="d-block w-100 img-slid-ongoing " alt="...">
+                <caption><p style="font-size: 13px;">National Youth Service (NYS) Embarks On Follow-up 
+                  And Monitoring Exercise Of Batch Three Corps Members</p></caption>
+                       <h6 style="font-size: 10px;">5 January,2023</h6>
+                <a href="#">Read More..</a>
+              </div>
+            </div>
+
+          </div>
+        
+          </div>
+
+        </div>
+      </div>
+      <div class=" col-md-12 col-sm-12  col-lg-6 col-xl-12">
+        <div class="text-black-3 mb-3">
+          <p>We encourage every young person to become a 
+            member of a youth development organization, 
+            enroll in an afterschool program, or join an extracurricular team, 
+            club, or group… and every adult to help the young people they 
+            know to join these programs and to add service and to use service 
+            opportunities to recruit new members.</p>
+        </div>
+      </div>
+    </div>
+</section>
+<!--  About SECTION ENDS -->
+
+<!-- Latest News SECTION BEGINS -->
+<section class="latest-news" id="latest-news">
+  <div class="container">
+    <div class="row text-center">
+    <h1 class="text-center display-3 fw-bold">Our Latest News </h1>
+    <hr class="bg-blue mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; height:3px;">
+  </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Minima ducimus beatae quas non quod earum alias magnam 
+      excepturi vitae similique. Praesentium velit voluptatem 
+      iste commodi, consequatur fugit ullam maxime suscipit!</p>
+    <div class="row">
+      <div class="col-md-12 col-sm-12  col-lg-4 col-xl-3">
+      <div class= "text-black  p-3 mb-3">
+        <div class="latest-new-img">
+          <img src="{% static "/images/about2.jpg" %}" class="d-block w-100 image img-slid-ongoing " alt="...">
+          <caption>
+            <div>
+                <a href="#" >News Heading: Youth Actions towards campaign </a>  
+            </div>
+            <div class="text-center">
+                <a href=""><i class="fa fa-calendar"> 3 weeks Ago</i></a>
+            </div>
+          <div>
+               <p>On October 25, 2022, the National Research
+                 Council of SierraLeone, Kabala, hosted the VII EuropeanConference 
+                 Raw MatTERS Ambassadors at Schools. Students, aged 
+                 10 – 19, and their mentors from 19 <a href="#">Read More →</a></p>   
+          </div>
+          
+          </caption>
+          
+        </div>
+      </div>
+    </div>
+      <div class="col-md-12 col-sm-12  col-lg-4 col-xl-3">
+      <div class= "text-black  p-3 mb-3">
+        <div  class="latest-new-img">
+          <img src="{% static "/images/about1.jpg" %}" class="d-block w-100 image img-slid-ongoing" alt="...">
+          <caption>
+            <div>
+                <a href="#" >News Heading: Youth Cleaning practices </a>  
+            </div>
+            <div class="text-center">
+                <a href=""><i class="fa fa-calendar"> 4 weeks Ago</i></a>
+            </div>
+          <div>
+               <p>On October 25, 2022, the National Research
+                 Council of SierraLeone, Kabala, hosted the VII EuropeanConference 
+                 Raw MatTERS Ambassadors at Schools. Students, aged 
+                 10 – 19, and their mentors from 19 <a href="#">Read More →</a></p>   
+          </div>
+          
+          </caption>
+          
+        </div>
+      </div>
+    </div>
+      <div class="col-md-12 col-sm-12  col-lg-4 col-xl-3">
+      <div class= "text-black  p-3 mb-3">
+        <div class="latest-new-img">
+          <img src="{% static "/images/about2.jpg" %}" class="d-block w-100 image img-slid-ongoing" alt="...">
+          
+          <caption>
+            <div>
+                <a href="#" >News Heading: Youth Talk show with minister of youth Services in Sierra Leone </a>  
+            </div>
+            <div class="text-center">
+                <a href=""><i class="fa fa-calendar"> 8 weeks Ago</i></a>
+            </div>
+          <div>
+               <p>On October 25, 2022, the National Research
+                 Council of SierraLeone, Kabala, hosted the VII EuropeanConference 
+                 Raw MatTERS Ambassadors at Schools. Students, aged 
+                 10 – 19, and their mentors from 19 <a href="#">Read More →</a></p>   
+               </div>
+          </caption>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class=" col-md-12 col-sm-12  col-lg-4 col-xl-3 ">
+      <div class=" mb-3  ">
+        <div class="latest-post">
+         <h4>Latest Post</h4> 
+         <a href="#">Minister of Youth and foreign affairs</a><hr>
+         <a href="#">The Freetown Mayor and foreign affairs</a><hr>
+         <a href="#">Awarding to all Nys </a><hr>
+         <a href="#">Minister of Youth and foreign affairs</a><hr>
+         <a href="#">Minister of Youth and foreign affairs</a><hr>
+         <a href="#">Minister of Youth and foreign affairs</a><hr>
+         <a href="#">Minister of Youth and foreign affairs</a><hr>
+         <div>
+         </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+      </div>
+  </div>
+
+</section>
+<!-- Latest News SECTION ENDS -->
+
+<!-- FAQS SECTION BEGINS -->
+
+<section class="faqs">
+  <div class="row text-center">
+  <h1 class="text-center   faqs-text display-3 fw-bold">Frequencly Asked Questions (FAQs)</h1>
+  <hr class="bg-blue mb-4 mt-0 d-inline-block mx-auto" style="width:100px; height:3px;">
+</div>
+  <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto" style="width: 50px; height:3px;">
+  <div class="container faqs__container">
+
+  <!-- question 1 -->
+      <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+              <h4> How do i Know KSS is the right School For me</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+          </div>
+      </article>
+  <!-- question 2 -->
+  <article class="faq">
+  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+  <div class="question__answer">
+      <h4> How do i Know KSS is the right School For me</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+  </div>
+  </article>
+  <!-- question 3 -->
+  <article class="faq">
+  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+  <div class="question__answer">
+      <h4 > How do i Know KSS is the right School For me</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+  </div>
+  </article>
+  <!-- question 4 -->
+  <article class="faq">
+  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+  <div class="question__answer">
+  <h4 > How do i Know KSS is the right School For me</h4>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+  </div>
+  </article>
+  <!-- question 5 -->
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 > How do i Know KSS is the right School For me</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+              </div>
+          </article>
+  <!-- question 6 -->
+  <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+          <h4 > How do i Know KSS is the right School For me</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+      </div>
+  </article>
+  <!-- question 7 -->
+  <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+          <h4 > How do i Know KSS is the right School For me</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+      </div>
+  </article>
+  <!-- question 8 -->
+  <article class="faq">
+  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+  <div class="question__answer">
+  <h4> How do i Know KSS is the right School For me</h4>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+  </div>
+  </article>
+  <!-- question 9-->
+  <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+          <h4> How do i Know KSS is the right School For me</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+      </div>
+  </article>
+  <!-- question 10-->
+  <article class="faq">
+  <div class="faq__icon"><i class="uil uil-plus"></i></div>
+  <div class="question__answer">
+  <h4 class="faqs-h4"> How do i Know KSS is the right School For me</h4>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magnam!</p>
+  </div>
+  </article>
+      </div>
+</section>
+
+
+<!-- FAQS  SECTION ENDS -->
+
+<!-- TESTIMONIAL SECTION BEIGNS  -->
+
+<section class="testimonial pt-3 pb-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1 class="display-3 fw-bold ">Testimonials</h1>
+        <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; height:3px;">
+        <p class="p-text ">What our youth are saying</p> 
+      </div>
+    </div>
+    <div class="row align-items-md-center ">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row p-4">
+          <div class="t-card">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+        <p class="lh-lg">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. 
+          Lorem Ipsum ist</p>
+                      <i class="fa fa-quote-right" aria-hidden="true"></i><br>
+                    </div>
+          <div class="row">                    
+           <div class="col-sm-2 pt-3">
+             <img src="{% static "/images/about2.jpg" %}" class="rounded-circle img-responsive img-fluid">
+                        </div>                    
+              <div class="col-sm-10">
+            <div class="arrow-down d-none d-lg-block"></div>
+             <h4><strong>Emmanuel Unique</strong></h4>
+        <p class="testimonial_subtitle"><span>Junior Software Engineer</span><br>
+            <span>YesTech Software Solution-SL </span>
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="carousel-item">
+                   <div class="row p-4">
+                    <div class="t-card">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="lh-lg">Lorem Ipsum ist ein einfacher 
+                      Demo-Text für die Print- und Schriftindustrie. 
+                      Lorem Ipsum ist</p>
+           <i class="fa fa-quote-right" aria-hidden="true"></i><br>
+           </div>
+        <div class="row">
+         <div class="col-sm-2 pt-4">
+   <img src="{% static "/images/about2.jpg" %}" class="rounded-circle img-responsive img-fluid">
+                        </div>
+           <div class="col-sm-10">
+            <div class="arrow-down d-none d-lg-block"></div>
+             <h4><strong>Alpha S Kargbo</strong></h4>
+        <p class="testimonial_subtitle"><span>Over Senior Software Developer</span><br>
+          <span>YesTech Software Solution-SL</span>
+                </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="carousel-item">
+                   <div class="row p-4">
+                    <div class="t-card">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="lh-lg">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. 
+                      Lorem Ipsum ist.</p>
+                      <i class="fa fa-quote-right" aria-hidden="true"></i><br>
+                    </div>
+                    <div class="row text-lg-start">
+                    <div class="col-sm-2 pt-4 align-items-center">
+                        <img src="{% static "/images/about2.jpg" %}" class="rounded-circle img-responsive img-fluid">
+                        </div>
+                        <div class="col-sm-10">
+                          <div class="arrow-down d-none d-md-block"></div>
+                        <h4><strong>Patrick Albert</strong></h4>
+                        <p class="testimonial_subtitle"><span>CEO</span><br>
+                        <span>YesTech Software Solution-SL</span>
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="controls push-right">
+                <a class="left fa fa-chevron-left  text-black btn btn btn-outline" href="#carouselExampleCaptions"
+                  data-bs-slide="prev"></a>
+                <a class="right fa fa-chevron-right text-black btn btn btn-outline" href="#carouselExampleCaptions"
+                  data-bs-slide="next"></a>
+              </div>
+        </div>
+    </div>
+  </div>
+  </section>
+<!-- TESTIMONIAL SECTION ENDS -->
+
+<!-- FOOTER SECTION BEGINS -->
+{% include "components/footer.html"%}
+<!-- FOOTER SECTION ENDS -->
+
+<!-- STYLE FOR THE FAQS -->
+<style >
+    /* FAQS BEGINS */
+  /* Aligns the heading text to the center. */
+  
+  .faqs{
+    background: #e6e7f1;
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5); 
+  }
+
+  /* we grab all the items in faqs__container class */
+  .faqs__container{
+    display: grid; /*grid display makes the items to be in columns*/
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  /* we tergert individual class  */
+  .faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: #6c63ff;
+    cursor: pointer;
+  }
+  /*.faqs h2{
+    color:#000;
+    margin-bottom: 24px;
+  } */
+  /*.faqs-text{
+    margin-bottom:2.5rem;
+  } 
+  */
+  /* we terget all the h4 tag in .faq class section */
+  .faq h4{
+    font-size: 1rem;
+    line-height: 2.2rem;
+    color: #fff;
+  }
+  
+  /* for the icon */
+  .faq__icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color:#fff;
+  }
+  /*  the p tag in the faq class*/
+  .faq p{
+    margin-top: 0.8rem;
+    display: none;/*we hide all the paragragh or the answers from the questions*/
+
+  }
+  /* the open class... is the class for the js. to show and hide faq answer */
+  .faq.open p{
+    display: block;
+  }
+
+  @media screen and (max-width:1024px) {
+    .faqs{
+      padding: 1.5rem;
+   }
+   .faqs-text{
+    margin-bottom:1.5rem;
+  }
+  
+   .faqs__container{
+      grid-template-columns: 1fr; /*The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.*/
+   }
+  }
+
+
+
+  /* FAQS ENDS */
+
+
+</style>
+
+
+<!-- JS FOR FAQS -->
+
+  <script>
+    // change navbar styling on scroll ---- that is the nav bar at the top
+window.addEventListener('scroll', () =>{
+  document.querySelector('nav').classList.toggle 
+  ('window-scroll', window.scrollY >100)
+}) 
+// this is to show/hide the faq answer
+const faqs = document.querySelectorAll('.faq');
+// here we loop through each of the faqs
+faqs.forEach(faq=>{
+  faq.addEventListener('click', () => {
+      faq.classList.toggle('open');
+      // we change the icon to minus(-) when the answer shows
+      const icon = faq.querySelector('.faq__icon i');
+      // we pass a condition
+    
+    if (icon.className === 'uil uil-plus'){
+          icon.className = "uil uil-minus";
+      }
+      else{
+          icon.className = "uil uil-plus";
+      } 
+
+    })
+  })
+
+  </script>

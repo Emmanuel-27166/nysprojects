@@ -1,0 +1,353 @@
+/* gooogle  font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins&display=swap');  
+
+
+  *, html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+   
+}
+/* navbar  styling for the desktop view */
+/* NAVBAR BEGINNING  */
+/* ============ desktop view ============ */ 
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+/* NAVBAR ENDING */
+
+/* SLIDING CAROUSEL STL */
+    /* SIZING OF THE BACKGROUND */
+.carousel-inner .carousel,
+.carousel-inner .item {
+    height: 92vh;
+    min-height: 200px; 
+
+}
+/*  GENERAL STYLING OF THE CAROSEL*/
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+  }
+  .carousel-fade .carousel-inner .item,
+  .carousel-fade .carousel-inner ,
+  .carousel-fade .carousel-inner {
+    opacity: 0;
+  }
+  .carousel-fade .carousel-inner .active,
+  .carousel-fade .carousel-inner,
+  .carousel-fade .carousel-inner {
+    opacity: 1;
+  }
+  .carousel-fade .carousel-inner ,
+  .carousel-fade .carousel-inner ,
+  .carousel-fade .carousel-inner,
+  .carousel-fade .carousel-inner{
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade{
+    z-index: 1;
+    font-size: 20px;
+    
+  }
+  .NysLogoTop img{
+    width: 100px;
+  }
+/* this is for the captions */
+.carousel-caption{
+    bottom: 320px;
+    z-index: 2;
+}
+.carousel-caption h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.md .sm .xl{
+    font-size: 30px;
+    bottom: 200px;
+
+}
+
+
+/* for  all section begins*/
+section{
+padding: 4rem;
+}
+/* for  all section end*/
+
+/* About begins */
+.about{
+  background-color: rgb(228, 224, 218);
+}
+.carousel-item img{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* About ends  */
+
+
+
+/*latest News Section begins  */
+.latest-new-img img:hover{
+  background-color: #fff;
+}
+.image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.latest-new-img:hover .image{
+  opacity: 0.2;
+}
+.latest-post a{
+  border: 1px solid rgb(243, 233, 233);
+ padding: 1px;
+ text-align: center;
+}
+
+/*Latest News Section ends  */
+
+/* FAQS BEGINS */
+/* Aligns the heading text to the center. */
+ 
+h1 {
+  text-align: center;
+}
+
+/* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
+
+.accordion {
+  width: 800px;
+  margin: 90px auto;
+  color: black;
+  background-color: rgb(228, 224, 218);
+  padding: 45px 45px;
+}
+/* positioned the children */
+.accordion {
+  position: relative;
+  margin: 10px 10px;
+}
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+  position: relative;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+ 
+}
+/* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+  height: 150px;
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container .faq-text .active .label::before {
+  content: '-';
+  font-size: 30px;
+}
+.faq{
+  background-color: rgb(228, 224, 218);
+}
+/* FAQS ENDS */
+
+/* TESTIMONIAL SECTION BEGINS */
+.client{
+  height: 100%;
+  width: 100%;
+  background: #7F00FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E100FF, #7F00FF); 
+}
+.carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.25rem;
+  color: #fff;
+  height: auto;
+}
+.rounded-circle {
+  border:2px solid rgb(0, 140, 255);
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 1.5625rem solid transparent;
+  border-right: 1.5625rem solid transparent;
+  border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
+
+}
+/* TESTIMONIAL SECTION ENDS */
+/* FOOTER SECTION BEGINS */
+ul li{
+  list-style: none;
+  text-decoration: none;
+}
+ul li a{
+  text-decoration: none;
+}
+.footer{
+  background-image: linear-gradient(rgba(5, 6, 6, 0.8), rgba(1, 23, 19, 0.9));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 0px;
+}
+.NysLogo img{
+  width: 150px;
+  
+}
+.important__links a{
+  color: #fff;
+}
+.footer-txt-btn input{
+  width: 100%;
+  padding: 0.6rem;
+  outline: none;
+  font-size: 1rem;
+  border: none;
+}
+.footer-txt-btn button{
+  width: 140px;
+  padding: 0.8rem 0;
+  background: var(--dodgerBlue);
+  color: #fff;
+  border: none;
+  margin: 1rem 0;
+  font-size: 1rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.footer-txt-btn button{
+  background: #7F00FF;
+}
+.social-icons a{
+  margin: 0px 6px 10px 6px;
+
+}
+.footer__socials{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  color: #fff;
+}
+.footer__socials a{
+  color: #fff;
+  border-radius: 100%;
+}
+
+
+.social-icons .uil{
+  font-size: 30px;
+  color: deepskyblue;
+  width: 40px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: white;
+  line-height: 30px;
+  border: 1px solid deepskyblue;
+  text-align: center;
+  transition: all 0.7s ease-in;
+   /*this is for the rottation*/
+  -webkit-transition: all 0.7s ease-in;
+  -moz-transition: all 0.7s ease-in;
+  -ms-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+}
+
+.copy-right{
+  text-align: center;
+}
+
+/* BACK TO TOP  BEGINS*/
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+/* BACK TO TOP ENDS */
+
+
+
+
+/* FOOTER SECTION ENDS */
+
+
+/* ALL MEDIA QUERIES */
+/* FOOTER */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.footer__socials{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+}
+}

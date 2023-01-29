@@ -1,0 +1,62 @@
+{% load static%}
+<!-- <nav class="navbar navbar-expand-lg navbar-dark  fixed-top bg-primary"> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <div class="container-fluid">
+                     <a class="navbar-brand NysLogoTop" href="{% url 'home' %}">  
+                        <img src="{% static "/images/NYS-Logo-New.png" %}" alt=""> 
+                  <span style="font-size: 24px; padding-left: 12px; color:white;"> NYS-SL</span> </a>
+               
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                   </button>
+                 
+                 <div class="collapse navbar-collapse" id="main_nav">
+                   <ul class="navbar-nav ms-auto">
+                       <li class="nav-item"><a class="nav-link" href="{% url 'home' %}"> Home</a></li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> About Us</a>
+                           <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="{% url 'background_info' %}"> Background  & Info</a></li>
+                             <li><a class="dropdown-item" href="{% url 'about_staff' %}"> Staff</a></li>
+                             <li><a class="dropdown-item" href="{% url 'about_board_of_dirs' %}"> Board Of Director</a></li>
+                             <li><a class="dropdown-item" href="{% url 'about_sponsors' %}"> Sponsors</a></li>
+                             <li><a class="dropdown-item" href="{% url 'about_impact' %}"> Impact </a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item"><a class="nav-link" href="{% url 'news' %}"> News</a></li>
+                       <li class="nav-item"><a class="nav-link" href="{% url 'department' %}"> Department</a></li>
+                       <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
+                       <li class="nav-item"><a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a></li>
+                       <li class="nav-item"><a class="nav-link" href="{% url 'alumni' %}">Alumni</a></li>
+                       <li class="nav-item"><a class="nav-link" href="{% url 'admission' %}"> Admission</a></li>
+                   </ul>
+                   <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                 </div> <!-- navbar-collapse.// -->
+                </div> <!-- container-fluid.// -->   
+             
+</nav>
+
+
+
+       <!-- HIDE AND SHOW NAVBAR START -->
+      <script>
+        const header = document.querySelector('header');
+
+window.addEventListener('scroll', () =>{
+  // from our css let add the class to the nav when we scroll 50px below the page
+  console.log(window.scrollY);
+  // here we check if the window.scrolly is bigger or smaller than 50 is yes we add the class else the remove the class
+  if(window.scrollY >= 60){
+    header.classList.add('myNavbar');
+
+  }else{
+    header.classList.remove('myNavbar');
+  }
+
+})
+
+      </script>
+       <!-- HIDE AND SHOW NAVBAR ENDS -->
